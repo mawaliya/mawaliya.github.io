@@ -5,7 +5,7 @@ author:
   email: "silmy.mawaliya@gmail.com"
   url: "https://mawaliya.github.io"
 
-baseurl: /
+baseurl: ""
 
 source: .
 destination: ./_site
