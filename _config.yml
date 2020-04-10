@@ -21,9 +21,9 @@
 title: Silmy's blog
 email: silmy.mawaliya@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This website is a place where I put everything I have learned.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  This website is a place where I put things I have learned.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://mawaliya.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: silmy_
 github_username: mawaliya
 
