@@ -1,7 +1,7 @@
 ---
 title: Simple D3.js on Jekyll
 published: true
-categories: "Data-Science"
+categories: [visualisation, data science]
 ---
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
