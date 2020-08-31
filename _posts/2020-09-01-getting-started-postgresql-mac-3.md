@@ -1,14 +1,15 @@
 ---
 title: Getting Started with PostgreSQL on Mac Part 3 (Final)
-published: false
+published: true
 categories: [database, sql, postgresql]
 ---
 
-This time we will do:
+This time we will practice:
 
 1. Creating a database using postgres utility and psql
 2. Renaming a database using psql
 3. Deleting a database using postgres utility and psql
+4. Collection of commands
 
 Please make sure the postgres server is running. Check this [post](https://mawaliya.github.io/getting-started-postgresql-mac-1).
 
@@ -36,12 +37,11 @@ Just like creating a role, we could create a database using both postgres utilit
 3.  Check the database is created, open postgres shell by running this on terminal `psql` or `psql postgres`.
 4.  Run this command on shell to list the databases:
 
-	```
-	\list
-	```
+    ```
+    \list
+    ```
 
     You should see the newly created database.
-
 
 ### Deleting a database using postgres utility
 
@@ -86,5 +86,23 @@ Just like creating a role, we could create a database using both postgres utilit
 
 2. You can go to psql shell and run command `\list` to check that `updated_database` should be gone from the list.
 
-
 From here, you can use any postgreSQL clients (python client etc) or directly using psql console to start using the database.
+
+
+### Collection of commands
+
+Terminal commands:
+
+* `pg_ctl -D /usr/local/var/postgres -l logfile start`	:	start a postgres server of the specified path cluster.
+* `pg_ctl -D /usr/local/var/postgres -l logfile stop`: stop a postgres server of the specifiec path cluster.
+* [Postgress utilities](https://www.postgresql.org/docs/12/reference-client.html).
+* `psql -U <role name>`	:	open psql shell or console as a role.
+* `psql postgres`	:	open psql shell or console as the default role (superuser).
+
+Psql shell/console commands:
+
+* `\du`	:	list roles.
+* `\list`	: 	list databases.
+* `\connect <database name>`	:	connect to a database specified.
+* `\dt`	:	list tables in a database.
+* `\q`	:	quit psql shell / console.
