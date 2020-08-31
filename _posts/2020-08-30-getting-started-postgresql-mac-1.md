@@ -4,7 +4,7 @@ published: true
 categories: [database, sql, postgresql]
 ---
 
-## install postgreSQL using homebrew
+## Install postgreSQL using homebrew
 
 There are multiple ways to install postgresql on your mac. Let's install it through command line for this post.
 
@@ -31,7 +31,7 @@ Output will be like:
 postgres (PostgreSQL) 12.4
 ```
 
-## configure cluster and start server
+## Configure cluster and start server
 
 After successfully installing postgresql, in terminal log there will be this note:
 
@@ -55,7 +55,6 @@ So, first create your cluster using this command:
 
 ```
 initdb --locale=C -E UTF-8 /usr/local/var/postgres
-
 ```
 
 When it's done, at the end of the the terminal log, will say this:
@@ -128,4 +127,20 @@ or enter the shell as a role
 
 ```
 psql postgres -U <username>
+```
+
+## Stop server
+
+To stop the server, use this `pg_ctl` command:
+
+```
+pg_ctl -D /usr/local/var/postgres stop
+```
+
+## Checking the log
+
+If you start the server using `-l` option, just open the file that is specified there. In this case `logfile`:
+
+```
+less logfile
 ```
