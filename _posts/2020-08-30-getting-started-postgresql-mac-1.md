@@ -4,6 +4,14 @@ published: true
 categories: [database, sql, postgresql]
 ---
 
+This time we will discuss:
+
+1. Installing `postgresql` using `homebrew`
+2. Configuring a cluster
+3. Starting a server
+4. Stopping a server
+5. Viewing redirected log
+
 ## Install postgreSQL using homebrew
 
 There are multiple ways to install postgresql on your mac. Let's install it through command line for this post.
@@ -143,4 +151,15 @@ If you start the server using `-l` option, just open the file that is specified 
 
 ```
 less logfile
+```
+
+In this file we could see the url of the server as well:
+
+```
+2020-08-31 02:12:26.089 BST [43338] LOG:  starting PostgreSQL 12.4 on x86_64-apple-darwin19.5.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.62), 64-bit
+2020-08-31 02:12:26.090 BST [43338] LOG:  listening on IPv6 address "::1", port 5432
+2020-08-31 02:12:26.090 BST [43338] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-08-31 02:12:26.092 BST [43338] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-08-31 02:12:26.113 BST [43339] LOG:  database system was shut down at 2020-08-31 02:12:17 BST
+2020-08-31 02:12:26.119 BST [43338] LOG:  database system is ready to accept connections
 ```
