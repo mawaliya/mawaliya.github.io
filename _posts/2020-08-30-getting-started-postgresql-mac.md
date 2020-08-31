@@ -90,12 +90,12 @@ If you want to start the server automatically during login, this command will ad
 brew services start postgresql
 ```
 
-Let's try to open the postgresql shell, try to run `psql` command on terminal.
+Let's try to open the postgresql shell, try to typer and run `psql` command on terminal.
 If you get this output error, it means the database is not created yet.
 
 ```
 # output
-psql: error: could not connect to server: FATAL:  database "swiftmage" does not exist
+psql: error: could not connect to server: FATAL:  database "macuser" does not exist
 ```
 
 In Mac, after installation using brew, you a default user with the mac username is created but the database is not. You need to run `createdb` in the terminal. then you can enter the shell as your mac user name (superuser) with only entering `psql`.
