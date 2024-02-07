@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Getting Started with PostgreSQL on Mac Part 3 (Final)
 published: true
 categories: [database, sql, postgresql]
