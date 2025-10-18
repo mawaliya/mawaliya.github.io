@@ -1,12 +1,11 @@
-My blog source code.
-Using theme from https://github.com/tocttou/hacker-blog
+# My blog source code
 
-Pre-requisite:
+Powered by [Hugo](https://gohugo.io/)
 
-- ruby
-- bundler (gem install bundler)
+Theme by [Hugo Narrow](https://hugo-narrow-docs.vercel.app/)
 
-Run locally
+## Run locally including drafts
 
-1. `bundle install`
-2. `bundle exec jekyll serve`
+```bash
+hugo server -D
+```

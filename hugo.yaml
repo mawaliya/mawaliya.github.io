@@ -61,27 +61,27 @@ menus:
         icon: contact
 
   # footer social link
-  social:
-    - name: GitHub
-      url: https://github.com/username
-      weight: 10
-      params:
-        icon: github
-    - name: Twitter
-      url: https://twitter.com/username
-      weight: 20
-      params:
-        icon: twitter
-    - name: LinkedIn
-      url: https://linkedin.com/in/username
-      weight: 30
-      params:
-        icon: linkedin
-    - name: Email
-      url: mailto:your.email@example.com
-      weight: 40
-      params:
-        icon: email
+  # social:
+  #   - name: GitHub
+  #     url: https://github.com/username
+  #     weight: 10
+  #     params:
+  #       icon: github
+  #   - name: Twitter
+  #     url: https://twitter.com/username
+  #     weight: 20
+  #     params:
+  #       icon: twitter
+  #   - name: LinkedIn
+  #     url: https://linkedin.com/in/username
+  #     weight: 30
+  #     params:
+  #       icon: linkedin
+  #   - name: Email
+  #     url: mailto:your.email@example.com
+  #     weight: 40
+  #     params:
+  #       icon: email
 
 params:
   # Basic site info with SEO
@@ -94,10 +94,10 @@ params:
     - "/images/og-default.avif" # Open Graph Image
 
   logo:
-    image: "favicon.svg" #"/images/logo.svg" # Logo path rel to static folder, leave empty use site title and primary color
+    image: "/favicon.svg" # Logo path rel to static folder, leave empty use site title and primary color
     link: "/" # click to home page
   favicon:
-    svg: "favicon.svg" # SVG format favicon (recommended)
+    svg: "/favicon.svg" # SVG format favicon (recommended)
 
   author:
     name: "Silmy Muslim"
