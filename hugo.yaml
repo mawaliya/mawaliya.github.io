@@ -94,7 +94,7 @@ params:
     - "/images/og-default.avif" # Open Graph Image
 
   logo:
-    image: "/favicon.svg" # Logo path rel to static folder, leave empty use site title and primary color
+    image: "/images/logo.svg" # Logo path rel to static folder, leave empty use site title and primary color
     link: "/" # click to home page
   favicon:
     svg: "/favicon.svg" # SVG format favicon (recommended)
