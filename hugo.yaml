@@ -192,21 +192,21 @@ params:
       lang: "en"
 
   analytics:
-    enabled: false
-    baidu:
-      enabled: false
-      id: "your-baidu-analytics-id"
-    clarity:
-      enabled: false
-      analytics: "your-clarity-analytics-id"
+    enabled: true
+    # baidu:
+    #   enabled: false
+    #   id: "your-baidu-analytics-id"
+    # clarity:
+    #   enabled: false
+    #   analytics: "your-clarity-analytics-id"
     google:
-      enabled: false
-      id: "your-google-analytics-id"
-    umami:
-      enabled: false
-      id: "your-umami-website-id"
-      src: "https://umami.com/myscript.js"
-      domains: "example.domain.com"
+      enabled: true
+      id: "G-17P06QS2WQ"
+    # umami:
+    #   enabled: false
+    #   id: "your-umami-website-id"
+    #   src: "https://umami.com/myscript.js"
+    #   domains: "example.domain.com"
 
   katex:
     enabled: true
